@@ -1,0 +1,205 @@
+.pilots-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.pilots-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pilots-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.pilots-subtitle {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+}
+
+.pilots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.pilot-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 2px solid #38383f;
+}
+
+.pilot-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 32px rgba(225, 6, 0, 0.3);
+    border-color: #e10600;
+}
+
+.pilot-card-header {
+    height: 6px;
+    background: #e10600;
+}
+
+.pilot-card-body {
+    padding: 2rem;
+    text-align: center;
+}
+
+.pilot-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    border: 4px solid #e10600;
+    display: block;
+}
+
+.pilot-photo-placeholder {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #38383f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #e10600;
+    margin: 0 auto 1.5rem;
+    border: 4px solid #e10600;
+}
+
+.pilot-name {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.pilot-team {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.pilot-number {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: none;
+}
+
+.btn-add-evaluation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    background: #e10600;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+}
+
+.btn-add-evaluation:hover {
+    background: #c00500;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(225, 6, 0, 0.5);
+}
+
+.btn-add-evaluation span {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.btn-add-to-collection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1.1rem;
+    background: #e10600;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.btn-add-to-collection:hover {
+    background: #c00500;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(225, 6, 0, 0.5);
+}
+
+.btn-add-to-collection span {
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.btn-in-collection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    background: #38383f;
+    color: #a0a0a0;
+    border: 2px solid #38383f;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    cursor: not-allowed;
+}
+
+.btn-in-collection span {
+    font-size: 1.2rem;
+    color: #00cc00;
+}
+
+.no-drivers {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #a0a0a0;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .pilots-header h1 {
+        font-size: 2rem;
+    }
+
+    .pilots-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-section {
+        justify-content: center;
+    }
+
+    .search-box {
+        max-width: 100%;
+    }
+}

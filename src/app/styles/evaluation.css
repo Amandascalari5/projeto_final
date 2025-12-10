@@ -1,0 +1,148 @@
+.evaluation-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    color: #e10600;
+    border: 2px solid #e10600;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.btn-back:hover {
+    background: #e10600;
+    color: #ffffff;
+}
+
+.form-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+}
+
+.evaluation-form {
+    background: #1a1a1a;
+    border: 2px solid #38383f;
+    border-radius: 12px;
+    padding: 2.5rem;
+    border-top: 4px solid #e10600;
+}
+
+.driver-info {
+    text-align: center;
+    padding: 1.5rem;
+    background: #0d0d0d;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.driver-info h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.driver-info p {
+    color: #e10600;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.driver-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #e10600;
+    color: #ffffff;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 1rem;
+    background: #0d0d0d;
+    border: 2px solid #38383f;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #e10600;
+    box-shadow: 0 0 0 3px rgba(225, 6, 0, 0.1);
+}
+
+.form-textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1.25rem;
+    background: #e10600;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    background: #c00500;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(225, 6, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .evaluation-form {
+        padding: 1.5rem;
+    }
+
+    .form-header h1 {
+        font-size: 2rem;
+    }
+}
