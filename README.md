@@ -15,8 +15,13 @@ O projeto se propõe a criar um espaço para os fãs de automobilismo deixarem s
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Executando
-Instalar pelo terminal:
+Clone o repositório:
+```bash
+git clone git@github.com:Amandascalari5/projeto_final.git
+cd projeto_final
 
+Instalar pelo terminal:
+    -npm install
     -Zod para validação de formulário: npm i zod
     -React Hot Toast para emitir mensagens estilo toast: npm i react-hot-toast
     -Brcrypt para criptografia da senha do usuário: npm i bcrypt
@@ -26,12 +31,6 @@ Em seguida, executar comando:
 
 ```bash
 npm run dev
-# ou
-yarn dev
-# ou
-pnpm dev
-# ou
-bun dev
 ```
 
 Abrir [http://localhost:3000](http://localhost:3000) no navegador para acessar aplicação.
